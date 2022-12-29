@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--Dark-cyan);
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 0.1px);
+    line-height: 22px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bg-top {
+    position: absolute;
+    top: -80%;
+    left: -25%;
+    z-index: -1;
+
+}
+
+.bg-bottom {
+    position: absolute;
+    bottom: -90%;
+    right: -23%;
+    z-index: -1;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 350px;
+    max-height: 374px;
+    border-radius: 15px;
+}
+
+.container section:first-child {
+    position: relative;
+}
+
+.container section:first-child img {
+    border-radius: 15px 15px 0 0;
+}
+
+.container section:first-child div img {
+    border-radius: 50%;
+    width: 5rem;
+    position: absolute;
+    left: 50%;
+    bottom: 6.4rem;
+    transform: translateX(-50%);
+    border: 5px solid white;
+}
+
+.card-body {
+    text-align: center;
+
+}
+
+.card-body h1 {
+    color: var(--dark-blue);
+    margin-top: 3rem;
+    font-size: 18px;
+}
+
+.card-body span {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: 18px;
+}
+
+.card-body p {
+    color: var(--grayish-blue);
+    font-size: 14px;
+    margin-top: 13px;
+    padding-bottom: 2rem;
+}
+
+.card-list {
+    border-top: 1px solid #E8E9EC;
+    padding: 1.2rem 2.5rem;
+}
+
+.card-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-list ul li {
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.card-list ul li span {
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--grayish-blue);
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 12px;
+    margin-top: 0.3rem;
+}
+
+
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+
+.attribution a {
+    color: var(--dark-blue);
+}
